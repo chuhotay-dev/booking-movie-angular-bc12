@@ -15,6 +15,13 @@ const clientRoutes: Routes = [
       { path: 'theater', component: TheaterComponent },
       { path: 'review', component: ReviewComponent },
       { path: 'contact', component: ContactComponent },
+      {
+        path: 'list-movie',
+        loadChildren: () =>
+          import('./pages/list-movie/list-movie.module').then(
+            (m) => m.ListMovieModule
+          ),
+      },
     ],
   },
 ];
