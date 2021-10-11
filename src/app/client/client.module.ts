@@ -7,6 +7,7 @@ import { TheaterComponent } from './pages/theater/theater.component';
 import { ReviewComponent } from './pages/review/review.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SharedModule } from '../shared/shared.module';
+import { DemoPipesComponent } from './pages/demo-pipes/demo-pipes.component';
 
 
 
@@ -16,7 +17,8 @@ import { SharedModule } from '../shared/shared.module';
     HomeComponent,
     TheaterComponent,
     ReviewComponent,
-    ContactComponent
+    ContactComponent,
+    DemoPipesComponent
   ],
   imports: [
     CommonModule,

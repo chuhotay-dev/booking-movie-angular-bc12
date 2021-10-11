@@ -6,6 +6,7 @@ import { ClientRoutingModule } from '../client/client-routing.module';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormatStringPipe } from './pipes/format-string.pipe';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     PageNotFoundComponent,
     LoginComponent,
+    FormatStringPipe,
   ],
   imports: [CommonModule, ClientRoutingModule, ReactiveFormsModule],
-  exports: [HeaderComponent, FooterComponent],
+  exports: [HeaderComponent, FooterComponent, FormatStringPipe],
 })
 export class SharedModule {}

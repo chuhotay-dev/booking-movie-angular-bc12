@@ -1,0 +1,36 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Input</th>
+            <th>Output</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>       
+            <td>1</td>
+            <td>DatePipe</td>
+            <td>{{ date }}</td>
+            <td>{{ date | date:'fullDate' }}</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>UpperCasePipe</td>
+            <td>{{ text }}</td>
+            <td>{{ text | uppercase }}</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>LowerCasePipe</td>
+            <td>{{ text }}</td>
+            <td>{{ text | lowercase }}</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>CustomPipe</td>
+            <td>{{ text }}</td>
+            <td>{{ text | formatString:0:20 }}</td>
+        </tr>
+    </tbody>
+</table>
